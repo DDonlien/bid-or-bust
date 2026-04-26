@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bid or Bust icon">
+  <rect width="64" height="64" rx="8" fill="#102027"/>
+  <path d="M10 23h44v27H10z" fill="#e09f3e"/>
+  <path d="M14 19h36v8H14z" fill="#2ec4b6"/>
+  <path d="M15 31h34v4H15zm0 8h25v4H15z" fill="#102027"/>
+  <path d="M42 37l8 4-8 4-8-4z" fill="#ff477e"/>
+</svg>
