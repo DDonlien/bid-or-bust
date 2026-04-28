@@ -1,6 +1,6 @@
 import { CATALOG_ITEMS, getItem, getShape } from "./catalog";
 import { Random, roundTo } from "./rng";
-import type { ContainerLot, PlacedItem } from "./types";
+import type { ContainerLot, PlacedItem, VenueConfig } from "./types";
 
 interface Cell {
   dx: number;
@@ -16,7 +16,7 @@ interface LotGenerationOptions {
 
 export interface GeneratedMatchLots {
   lots: ContainerLot[];
-  expectedMatchValue: number;
+  referenceLotValueRange: [number, number];
 }
 
 const LOT_SOURCES = [
@@ -59,18 +59,16 @@ export function shapeSize(shapeId: string): { w: number; h: number; area: number
   return { w, h, area: shapeCells(shapeId).length };
 }
 
-export function generateMatchLots(seed: string, lotCount = 5): GeneratedMatchLots {
+export function generateMatchLots(seed: string, venue: VenueConfig): GeneratedMatchLots {
   const rng = new Random(`${seed}:lots`);
-  const expectedMatchValue = roundTo(rng.int(15500, 22000), 250);
-  let remainingTarget = expectedMatchValue;
   const lots: ContainerLot[] = [];
 
-  for (let index = 0; index < lotCount; index += 1) {
-    const remainingLots = lotCount - index;
-    const pressure =
-      remainingLots === 1 ? 1 : rng.float(0.72, 1.28 + index * 0.03);
-    const targetValue = Math.max(1800, (remainingTarget / remainingLots) * pressure);
-    const riskTier = pickRiskTier(rng, index, lotCount);
+  for (let index = 0; index < venue.lotCount; index += 1) {
+    const targetValue = roundTo(
+      rng.float(venue.lotValueRange[0], venue.lotValueRange[1]),
+      venue.bidStep / 2,
+    );
+    const riskTier = pickRiskTier(rng, index, venue.lotCount);
     const lot = generateContainerLot(rng, {
       index,
       targetValue,
@@ -78,12 +76,11 @@ export function generateMatchLots(seed: string, lotCount = 5): GeneratedMatchLot
       minItems: 10,
     });
     lots.push(lot);
-    remainingTarget -= lot.totalValue;
   }
 
   return {
     lots,
-    expectedMatchValue,
+    referenceLotValueRange: venue.lotValueRange,
   };
 }
 

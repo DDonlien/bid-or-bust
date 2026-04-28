@@ -1,0 +1,1962 @@
+{
+  "version": 1,
+  "notes": "初版自动/半手工裁切结果；如需更细粒度（例如库存格子/物品图标/地图节点），可以在此基础上迭代裁切配置。",
+  "assets": [
+    {
+      "name": "home/sidebar_panel",
+      "screen": "home",
+      "source": "2570d7c5-f5b2-4d1f-ae08-e8ce42e5a124_home.png",
+      "rect": [
+        0,
+        0,
+        355,
+        1151
+      ],
+      "size": [
+        355,
+        1151
+      ],
+      "tags": [
+        "panel",
+        "sidebar"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "home/logo",
+      "screen": "home",
+      "source": "2570d7c5-f5b2-4d1f-ae08-e8ce42e5a124_home.png",
+      "rect": [
+        18,
+        20,
+        330,
+        210
+      ],
+      "size": [
+        312,
+        190
+      ],
+      "tags": [
+        "brand",
+        "logo"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "home/btn_nav_selected",
+      "screen": "home",
+      "source": "2570d7c5-f5b2-4d1f-ae08-e8ce42e5a124_home.png",
+      "rect": [
+        25,
+        475,
+        330,
+        540
+      ],
+      "size": [
+        305,
+        65
+      ],
+      "tags": [
+        "button",
+        "nav",
+        "selected"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "home/btn_nav_normal",
+      "screen": "home",
+      "source": "2570d7c5-f5b2-4d1f-ae08-e8ce42e5a124_home.png",
+      "rect": [
+        25,
+        540,
+        330,
+        605
+      ],
+      "size": [
+        305,
+        65
+      ],
+      "tags": [
+        "button",
+        "nav",
+        "normal"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "home/btn_start_auction",
+      "screen": "home",
+      "source": "2570d7c5-f5b2-4d1f-ae08-e8ce42e5a124_home.png",
+      "rect": [
+        25,
+        975,
+        330,
+        1085
+      ],
+      "size": [
+        305,
+        110
+      ],
+      "tags": [
+        "button",
+        "primary"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "home/top_right_btn_leaderboard",
+      "screen": "home",
+      "source": "2570d7c5-f5b2-4d1f-ae08-e8ce42e5a124_home.png",
+      "rect": [
+        1615,
+        20,
+        1705,
+        95
+      ],
+      "size": [
+        90,
+        75
+      ],
+      "tags": [
+        "button",
+        "icon"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "home/top_right_btn_collection",
+      "screen": "home",
+      "source": "2570d7c5-f5b2-4d1f-ae08-e8ce42e5a124_home.png",
+      "rect": [
+        1710,
+        20,
+        1800,
+        95
+      ],
+      "size": [
+        90,
+        75
+      ],
+      "tags": [
+        "button",
+        "icon"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "home/top_right_btn_missions",
+      "screen": "home",
+      "source": "2570d7c5-f5b2-4d1f-ae08-e8ce42e5a124_home.png",
+      "rect": [
+        1805,
+        20,
+        1895,
+        95
+      ],
+      "size": [
+        90,
+        75
+      ],
+      "tags": [
+        "button",
+        "icon"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "home/top_right_btn_settings",
+      "screen": "home",
+      "source": "2570d7c5-f5b2-4d1f-ae08-e8ce42e5a124_home.png",
+      "rect": [
+        1900,
+        20,
+        1990,
+        95
+      ],
+      "size": [
+        90,
+        75
+      ],
+      "tags": [
+        "button",
+        "icon"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "home/right_location_card",
+      "screen": "home",
+      "source": "2570d7c5-f5b2-4d1f-ae08-e8ce42e5a124_home.png",
+      "rect": [
+        1540,
+        420,
+        2030,
+        840
+      ],
+      "size": [
+        490,
+        420
+      ],
+      "tags": [
+        "panel",
+        "card"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "bidding/left_panel",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "rect": [
+        0,
+        0,
+        300,
+        941
+      ],
+      "size": [
+        300,
+        941
+      ],
+      "tags": [
+        "panel",
+        "sidebar"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "bidding/btn_inc_500",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "rect": [
+        25,
+        548,
+        116,
+        592
+      ],
+      "size": [
+        91,
+        44
+      ],
+      "tags": [
+        "button",
+        "small"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "bidding/btn_inc_1000",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "rect": [
+        112,
+        548,
+        242,
+        592
+      ],
+      "size": [
+        130,
+        44
+      ],
+      "tags": [
+        "button",
+        "small"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "bidding/btn_inc_max",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "rect": [
+        242,
+        548,
+        350,
+        592
+      ],
+      "size": [
+        108,
+        44
+      ],
+      "tags": [
+        "button",
+        "small"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "bidding/btn_raise_bid",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "rect": [
+        45,
+        625,
+        280,
+        675
+      ],
+      "size": [
+        235,
+        50
+      ],
+      "tags": [
+        "button",
+        "primary"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "bidding/btn_fold",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "rect": [
+        45,
+        675,
+        280,
+        730
+      ],
+      "size": [
+        235,
+        55
+      ],
+      "tags": [
+        "button",
+        "danger"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "bidding/right_storage_panel",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "rect": [
+        1215,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        457,
+        941
+      ],
+      "tags": [
+        "panel",
+        "storage"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "bidding/bottom_bar",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "rect": [
+        0,
+        885,
+        1672,
+        941
+      ],
+      "size": [
+        1672,
+        56
+      ],
+      "tags": [
+        "panel",
+        "statusbar"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "result/left_result_panel",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "rect": [
+        0,
+        0,
+        1215,
+        941
+      ],
+      "size": [
+        1215,
+        941
+      ],
+      "tags": [
+        "panel",
+        "result"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "result/right_storage_panel",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "rect": [
+        1215,
+        0,
+        1672,
+        941
+      ],
+      "size": [
+        457,
+        941
+      ],
+      "tags": [
+        "panel",
+        "storage"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "result/btn_view_collection",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "rect": [
+        1290,
+        780,
+        1635,
+        845
+      ],
+      "size": [
+        345,
+        65
+      ],
+      "tags": [
+        "button",
+        "secondary"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "storage/bidding_slot_locked",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "rect": [
+        1205,
+        430,
+        1296,
+        540
+      ],
+      "size": [
+        91,
+        110
+      ],
+      "tags": [
+        "storage",
+        "slot",
+        "locked"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "storage/bidding_slot_empty",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "rect": [
+        1205,
+        430,
+        1296,
+        540
+      ],
+      "size": [
+        91,
+        110
+      ],
+      "tags": [
+        "storage",
+        "slot",
+        "empty"
+      ],
+      "clean_text": true
+    },
+    {
+      "name": "storage/bidding_icons/icon_00",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        0,
+        0
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1205,
+        100,
+        1296,
+        210
+      ],
+      "size": [
+        56,
+        60
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_01",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        0,
+        1
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1296,
+        100,
+        1387,
+        210
+      ],
+      "size": [
+        61,
+        61
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_02",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        0,
+        2
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1387,
+        100,
+        1478,
+        210
+      ],
+      "size": [
+        51,
+        68
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_03",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        0,
+        3
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1478,
+        100,
+        1569,
+        210
+      ],
+      "size": [
+        50,
+        61
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_04",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        0,
+        4
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1569,
+        100,
+        1660,
+        210
+      ],
+      "size": [
+        50,
+        62
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_05",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        1,
+        0
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1205,
+        210,
+        1296,
+        320
+      ],
+      "size": [
+        59,
+        67
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_06",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        1,
+        1
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1296,
+        210,
+        1387,
+        320
+      ],
+      "size": [
+        50,
+        75
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_07",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        1,
+        2
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1387,
+        210,
+        1478,
+        320
+      ],
+      "size": [
+        38,
+        75
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_08",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        1,
+        3
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1478,
+        210,
+        1569,
+        320
+      ],
+      "size": [
+        61,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_09",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        1,
+        4
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1569,
+        210,
+        1660,
+        320
+      ],
+      "size": [
+        7,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_10",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        2,
+        0
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1205,
+        320,
+        1296,
+        430
+      ],
+      "size": [
+        59,
+        64
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_11",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        2,
+        1
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1296,
+        320,
+        1387,
+        430
+      ],
+      "size": [
+        61,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_12",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        2,
+        2
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1387,
+        320,
+        1478,
+        430
+      ],
+      "size": [
+        61,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_13",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        2,
+        3
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1478,
+        320,
+        1569,
+        430
+      ],
+      "size": [
+        61,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_14",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        2,
+        4
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1569,
+        320,
+        1660,
+        430
+      ],
+      "size": [
+        58,
+        79
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_15",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        3,
+        0
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1205,
+        430,
+        1296,
+        540
+      ],
+      "size": [
+        58,
+        55
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_16",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        3,
+        1
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1296,
+        430,
+        1387,
+        540
+      ],
+      "size": [
+        61,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_17",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        3,
+        2
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1387,
+        430,
+        1478,
+        540
+      ],
+      "size": [
+        61,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_18",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        3,
+        3
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1478,
+        430,
+        1569,
+        540
+      ],
+      "size": [
+        49,
+        57
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_19",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        3,
+        4
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1569,
+        430,
+        1660,
+        540
+      ],
+      "size": [
+        58,
+        66
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_20",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        4,
+        0
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1205,
+        540,
+        1296,
+        650
+      ],
+      "size": [
+        27,
+        21
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_21",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        4,
+        1
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1296,
+        540,
+        1387,
+        650
+      ],
+      "size": [
+        28,
+        21
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_22",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        4,
+        2
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1387,
+        540,
+        1478,
+        650
+      ],
+      "size": [
+        28,
+        25
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_23",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        4,
+        3
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1478,
+        540,
+        1569,
+        650
+      ],
+      "size": [
+        27,
+        25
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/bidding_icons/icon_24",
+      "screen": "bidding",
+      "source": "1b12755d-9652-41b6-bcf5-ca1436d3f2c6_bidding.png",
+      "cell_rc": [
+        4,
+        4
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1569,
+        540,
+        1660,
+        650
+      ],
+      "size": [
+        27,
+        21
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_slot_locked",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "rect": [
+        1205,
+        430,
+        1296,
+        540
+      ],
+      "size": [
+        91,
+        110
+      ],
+      "tags": [
+        "storage",
+        "slot",
+        "locked"
+      ],
+      "clean_text": false
+    },
+    {
+      "name": "storage/result_slot_empty",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "rect": [
+        1205,
+        430,
+        1296,
+        540
+      ],
+      "size": [
+        91,
+        110
+      ],
+      "tags": [
+        "storage",
+        "slot",
+        "empty"
+      ],
+      "clean_text": true
+    },
+    {
+      "name": "storage/result_icons/icon_00",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        0,
+        0
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1205,
+        100,
+        1296,
+        210
+      ],
+      "size": [
+        59,
+        60
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_01",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        0,
+        1
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1296,
+        100,
+        1387,
+        210
+      ],
+      "size": [
+        61,
+        61
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_02",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        0,
+        2
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1387,
+        100,
+        1478,
+        210
+      ],
+      "size": [
+        61,
+        67
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_03",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        0,
+        3
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1478,
+        100,
+        1569,
+        210
+      ],
+      "size": [
+        52,
+        62
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_04",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        0,
+        4
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1569,
+        100,
+        1660,
+        210
+      ],
+      "size": [
+        61,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_05",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        1,
+        0
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1205,
+        210,
+        1296,
+        320
+      ],
+      "size": [
+        61,
+        67
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_06",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        1,
+        1
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1296,
+        210,
+        1387,
+        320
+      ],
+      "size": [
+        52,
+        76
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_07",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        1,
+        2
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1387,
+        210,
+        1478,
+        320
+      ],
+      "size": [
+        40,
+        75
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_08",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        1,
+        3
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1478,
+        210,
+        1569,
+        320
+      ],
+      "size": [
+        61,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_09",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        1,
+        4
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1569,
+        210,
+        1660,
+        320
+      ],
+      "size": [
+        8,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_10",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        2,
+        0
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1205,
+        320,
+        1296,
+        430
+      ],
+      "size": [
+        59,
+        64
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_11",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        2,
+        1
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1296,
+        320,
+        1387,
+        430
+      ],
+      "size": [
+        61,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_12",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        2,
+        2
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1387,
+        320,
+        1478,
+        430
+      ],
+      "size": [
+        61,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_13",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        2,
+        3
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1478,
+        320,
+        1569,
+        430
+      ],
+      "size": [
+        51,
+        67
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_14",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        2,
+        4
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1569,
+        320,
+        1660,
+        430
+      ],
+      "size": [
+        61,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_15",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        3,
+        0
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1205,
+        430,
+        1296,
+        540
+      ],
+      "size": [
+        59,
+        56
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_16",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        3,
+        1
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1296,
+        430,
+        1387,
+        540
+      ],
+      "size": [
+        61,
+        75
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_17",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        3,
+        2
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1387,
+        430,
+        1478,
+        540
+      ],
+      "size": [
+        61,
+        80
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_18",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        3,
+        3
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1478,
+        430,
+        1569,
+        540
+      ],
+      "size": [
+        51,
+        57
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_19",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        3,
+        4
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1569,
+        430,
+        1660,
+        540
+      ],
+      "size": [
+        61,
+        67
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_20",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        4,
+        0
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1205,
+        540,
+        1296,
+        650
+      ],
+      "size": [
+        27,
+        22
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_21",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        4,
+        1
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1296,
+        540,
+        1387,
+        650
+      ],
+      "size": [
+        28,
+        25
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_22",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        4,
+        2
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1387,
+        540,
+        1478,
+        650
+      ],
+      "size": [
+        28,
+        22
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_23",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        4,
+        3
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1478,
+        540,
+        1569,
+        650
+      ],
+      "size": [
+        28,
+        25
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    },
+    {
+      "name": "storage/result_icons/icon_24",
+      "screen": "result",
+      "source": "84201086-cb82-4172-be27-9e2fd3fb00de_result.png",
+      "cell_rc": [
+        4,
+        4
+      ],
+      "grid_rect": [
+        1205,
+        100,
+        1660,
+        650
+      ],
+      "cell_rect": [
+        1569,
+        540,
+        1660,
+        650
+      ],
+      "size": [
+        27,
+        23
+      ],
+      "tags": [
+        "storage",
+        "icon"
+      ]
+    }
+  ]
+}

@@ -1,4 +1,12 @@
 export type PlayerId = string;
+
+export type ItemQuality =
+  | "scrap"
+  | "useful"
+  | "curious"
+  | "rare"
+  | "unregistered";
+
 export type ItemCategory =
   | "household"
   | "industrial"
@@ -31,11 +39,15 @@ export interface GridShape {
 export interface CatalogItem {
   id: string;
   name: string;
+  shortName: string;
   category: ItemCategory;
   material: MaterialTag;
+  quality: ItemQuality;
   baseValue: number;
   shapeId: string;
   silhouetteFamily: string;
+  isKeepable: boolean;
+  isCredential: boolean;
   flavor: string;
 }
 
@@ -62,6 +74,20 @@ export interface ContainerLot {
   items: PlacedItem[];
 }
 
+export interface VenueConfig {
+  id: string;
+  name: string;
+  entryFee: number;
+  escrowFunds: number;
+  lotCount: number;
+  lotValueRange: [number, number];
+  bidStep: number;
+  qualificationRequirements: string;
+  riskLevel: "low" | "medium" | "high";
+  oddityRate: number;
+  contrabandRate: number;
+}
+
 export interface SkillDefinition {
   id: string;
   name: string;
@@ -79,9 +105,17 @@ export interface CharacterDefinition {
 export interface PlayerState {
   id: PlayerId;
   name: string;
-  cash: number;
+  totalCash: number;
+  escrow: number;
   characterId: string;
   isBroke: boolean;
+  warehouse: KeptItem[];
+}
+
+export interface KeptItem {
+  catalogId: string;
+  value: number;
+  sourceLotId: string;
 }
 
 export type IntelKind =
@@ -89,7 +123,10 @@ export type IntelKind =
   | "value-band"
   | "oddity-count"
   | "cheapest-item"
-  | "material-read";
+  | "material-read"
+  | "quality-read"
+  | "category-read"
+  | "known-floor";
 
 export interface Intel {
   id: string;
@@ -100,29 +137,57 @@ export interface Intel {
   title: string;
   detail: string;
   itemInstanceId?: string;
+  quality?: ItemQuality;
+  category?: ItemCategory;
+  material?: MaterialTag;
+  minValue?: number;
   revealAtRound?: number;
 }
 
 export type AuctionStatus = "inspection" | "bidding" | "sold";
 
+export interface AuctionPlayerState {
+  active: boolean;
+  folded: boolean;
+  commitmentBid: number;
+  lookUsedThisRound: boolean;
+  skillUsedThisRound: boolean;
+  allIn: boolean;
+}
+
+export interface AuctionResult {
+  winnerId: PlayerId;
+  finalPrice: number;
+  totalValue: number;
+  liquidatedValue: number;
+  keptValue: number;
+  profit: number;
+  cashProfit: number;
+  keptItems: KeptItem[];
+  reason: string;
+}
+
 export interface AuctionState {
   lot: ContainerLot;
   round: number;
   status: AuctionStatus;
-  currentBid: number;
-  highBidderId?: PlayerId;
+  highestBid: number;
+  secondBid: number;
+  directSaleRatio?: number;
+  playerStates: Record<PlayerId, AuctionPlayerState>;
   activePlayerIds: PlayerId[];
   foldedPlayerIds: PlayerId[];
   pendingPlayerIds: PlayerId[];
   currentTurnPlayerId?: PlayerId;
-  roundLooked: Record<PlayerId, boolean>;
-  roundSkillUsed: Record<PlayerId, boolean>;
   privateIntel: Record<PlayerId, Intel[]>;
   publicIntel: Intel[];
   delayedIntel: Intel[];
   roundRaises: number;
+  publicKnownFloor: number;
+  playerKnownFloor: Record<PlayerId, number>;
   soldToPlayerId?: PlayerId;
   finalProfit?: number;
+  result?: AuctionResult;
 }
 
 export type MatchPhase = "lobby" | "auction" | "reveal" | "game-over";
@@ -135,7 +200,7 @@ export interface LogEntry {
 
 export interface GameConfig {
   entryFee: number;
-  minRaise: number;
+  bidStep: number;
   maxRounds: number;
   lotCount: number;
   startingCash: number;
@@ -147,10 +212,11 @@ export interface GameState {
   rngState: number;
   phase: MatchPhase;
   config: GameConfig;
+  venue: VenueConfig;
   players: PlayerState[];
   lots: ContainerLot[];
   lotIndex: number;
-  expectedMatchValue: number;
+  referenceLotValueRange: [number, number];
   realizedValue: number;
   auction?: AuctionState;
   log: LogEntry[];
@@ -159,14 +225,17 @@ export interface GameState {
 
 export type BidAction =
   | {
-      type: "raise";
-      amount: number;
+      type: "hold";
     }
   | {
-      type: "follow";
+      type: "raise";
+      steps: number;
     }
   | {
       type: "fold";
+    }
+  | {
+      type: "all-in";
     };
 
 export interface EngineResult {
