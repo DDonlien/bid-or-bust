@@ -1,0 +1,9 @@
+id,index,name,x,y,stars,risk,coreVenueId,escrow,bidStep,entryFee,requiredKeeps,expectedReturnMin,expectedReturnMax,lotCountMin,lotCountMax
+old-harbor,1,Old Harbor,38,45,2,Medium,rusty-harbor,20000,500,1000,0,8000,18000,3,3
+estate-pier,2,Estate Pier,34,69,2,Low,rusty-harbor,35000,1000,2500,1,18000,42000,3,4
+rail-warehouse,3,Rail Warehouse,38,22,3,Medium,rusty-harbor,50000,2500,4000,2,25000,70000,3,4
+flooded-mall,4,Flooded Mall,62,18,3,High,oddity-overflow,75000,5000,8000,3,50000,120000,4,5
+oddity-market,5,Oddity Market,80,32,2,High,oddity-overflow,100000,5000,10000,4,60000,160000,3,4
+customs-yard,6,Customs Yard,60,47,3,Medium,oddity-overflow,60000,2500,5500,2,35000,90000,4,5
+sunken-exchange,7,Sunken Exchange,56,70,4,High,oddity-overflow,125000,10000,15000,5,90000,220000,4,5
+volcanic-claims,8,Volcanic Claims,68,84,3,High,oddity-overflow,150000,10000,20000,6,110000,280000,5,5

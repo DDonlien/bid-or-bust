@@ -193,7 +193,7 @@ function drawBackdrop(
 
   context.font = "14px Courier New, monospace";
   context.fillText(
-    `EXPECTED MARKET POOL: $${state.expectedMatchValue} | REALIZED: $${state.realizedValue}`,
+    `REFERENCE POOL: $${state.referenceLotValueRange[0]}-$${state.referenceLotValueRange[1]} | REALIZED: $${state.realizedValue}`,
     30,
     90,
   );
